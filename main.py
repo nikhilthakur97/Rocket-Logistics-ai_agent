@@ -56,7 +56,6 @@ async def handle_voice_call(request: Request):
     )
     
 
-    
     # Initialize call session
     active_calls[call_sid] = {
         "from_number": from_number,
