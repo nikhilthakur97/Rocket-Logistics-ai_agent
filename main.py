@@ -31,6 +31,9 @@ twilio_client = Client(config.twilio_account_sid, config.twilio_auth_token)
 # Store active calls
 active_calls = {}
 
+
+#Addd layers of security to the code
+
 @app.post("/webhook/voice")
 async def handle_voice_call(request: Request):
     """Handle incoming voice calls from Twilio"""
