@@ -45,6 +45,7 @@ async def handle_voice_call(request: Request):
     
     response = VoiceResponse()
     
+    
     # Start recording and gather speech
     response.say("Hello! Welcome to Rocket Shipment. I'm your Rocket Shipment AI agent. How can I help you today?")
     response.record(
