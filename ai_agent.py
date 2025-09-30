@@ -110,8 +110,8 @@ class SwiftLogisticsAgent:
                     'context': context,
                     'continue_conversation': True
                 }
-        
-        # Cancel shipment intent (check FIRST to avoid conflicts)
+        #
+        # Cancel shipment intent (check FIRST to avoid conflicts) and can add a layer 
         if self._wants_to_cancel(user_message):
             logger.info(f"Detected cancellation intent")
             tracking_id = self._extract_tracking_id(user_message)
